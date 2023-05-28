@@ -23,12 +23,19 @@
   ],
   "exports": {
     ".": {
+      "types": "./lib/index.d.ts",
       "require": "./lib/index.js",
       "import": "./esm/index.js"
     },
     "./scss/": "./scss/",
     "./lib/themes/": "./lib/themes/",
     "./lib/*": {
+      "types": "./lib/*.d.ts",
+      "require": "./lib/*.js",
+      "import": "./esm/*.js"
+    },
+    "./esm/*": {
+      "types": "./esm/*.d.ts",
       "require": "./lib/*.js",
       "import": "./esm/*.js"
     }

@@ -152,6 +152,7 @@
   ],
   "exports": {
     ".": {
+      "types": "./lib/index.d.ts",
       "require": "./lib/index.js",
       "import": "./esm/index.js"
     },
@@ -166,6 +167,7 @@
       "import": "./lib/themes/*"
     },
     "./lib/*": {
+      "types": "./lib/*.d.ts",
       "require": "./lib/*.js",
       "import": "./esm/*.js"
     },

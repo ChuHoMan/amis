@@ -17,10 +17,12 @@
   },
   "exports": {
     ".": {
+      "types": "./lib/index.d.ts",
       "require": "./lib/index.js",
       "import": "./esm/index.js"
     },
     "./lib/*": {
+      "types": "./lib/*.d.ts",
       "require": "./lib/*.js",
       "import": "./esm/*.js"
     }
